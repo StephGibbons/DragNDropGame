@@ -61,46 +61,6 @@ h1 {
 
 }
 
-.wrapper .ColorRed{
-    width: 175px;
-    height: 175px;
-    margin: 15px;
-    background-color: #fd1d1d;
-	border-style: dashed;
-	border-color: transparent;
-	border-radius: 15px;
-}
-
-.wrapper .ColorBlue{
-    width: 175px;
-    height: 175px;
-    margin: 15px;
-    background-color: #2835ee;
-	border-style: dashed;
-	border-color: transparent;
-	border-radius: 15px;
-}
-
-.wrapper .ColorGreen{
-    width: 175px;
-    height: 175px;
-    margin: 15px;
-    background-color: #059100;
-	border-style: dashed;
-	border-color: transparent;
-	border-radius: 15px;
-}
-
-.wrapper .ColorYellow{
-    width: 175px;
-    height: 175px;
-    margin: 15px;
-    background-color: #f4f81d;
-	border-style: dashed;
-	border-color: transparent;
-	border-radius: 15px;
-}
-
 .wrapper .ColorOrange{
     width: 175px;
     height: 175px;
@@ -111,15 +71,6 @@ h1 {
 	border-radius: 15px;
 }
 
-.wrapper .ColorPurple{
-    width: 175px;
-    height: 175px;
-    margin: 15px;
-    background-color: #6115a8;
-	border-style: dashed;
-	border-color: transparent;
-	border-radius: 15px;
-}
 
 
 .container{
