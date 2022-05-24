@@ -77,46 +77,40 @@ a{
     font-weight: bold;
 }
 
+/*Game Timer*/
 
-.wrapper{
-    width: 60%;
+.container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items:center;
-    margin-top: 25px;
-    margin-bottom: 25px ;
-
-}
-
-.wrapper .ColorOrange{
-    width: 175px;
-    height: 175px;
-    margin: 15px;
-    background-color: #ffa126;
-	border-style: dashed;
-	border-color: transparent;
-	border-radius: 15px;
-}
-
-
-
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items:center;
-    width: 40%;
-
-}
-
-.circle{
-    height:152px;
-    width:152px;
-    margin:15px;
-}
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: #e9c46a;
+  }
+  #timer {
+    margin-bottom: 25px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2a9d8f;
+  }
+  
+  button {
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #e76f51;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+   
+  }
 
 
 

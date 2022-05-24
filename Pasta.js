@@ -3,6 +3,9 @@ var score = 0;
 const timer = document.getElementById("timer");
 let timerInterval;
 
+
+//timer code
+
 startTimer = () => {
   // Firs twe start by clearing the existing timer, in case of a restart
   clearInterval(timerInterval);
