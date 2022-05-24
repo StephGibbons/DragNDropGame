@@ -35,7 +35,7 @@ h1 {
 }
 
 
-/* Level 1 Styling*/
+/* Main Page Styling*/
 .MainButtons{
     width:800px;
     height: 150px;
@@ -45,6 +45,36 @@ h1 {
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.75);
     margin-bottom: 15px;
+}
+
+button{
+    font-size:200%;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.selected{
+    background-color: #abcab3;
+    color: #255627;
+    width: 25%;
+    font-weight: bold;
+}
+.unselected{
+    width: 25%;
+    background-color: #7bba6c;
+    
+    
+}
+.unselected:hover{
+    background-color: #e3d2ff;
+    color: #3a2556;
+    font-weight: bold;
 }
 
 
@@ -89,43 +119,7 @@ h1 {
 }
 
 
-/* buttons*/
-.gameselector{
-    width:100%;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
-button{
-    font-size:200%;
-    border-radius: 5px;
-    font-weight: bold;
-
-}
-
-a{
-    text-decoration: none;
-    color:rgb(255, 255, 255);
-}
-
-.selected{
-    background-color: #abcab3;
-    color: #255627;
-    width: 25%;
-    font-weight: bold;
-}
-.unselected{
-    width: 25%;
-    background-color: #7bba6c;
-    
-    
-}
-.unselected:hover{
-    background-color: #e3d2ff;
-    color: #3a2556;
-    font-weight: bold;
-}
 
 
 
