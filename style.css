@@ -79,37 +79,44 @@ a{
 
 /*Game Timer*/
 
-.container {
+.clock {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    background: #e9c46a;
+    width: 25%;
+    flex-direction: row;
+    border: double;
   }
   #timer {
-    margin-bottom: 25px;
-    font-size: 3rem;
+    margin-bottom: 10px;
+    font-size: 250%;
     font-weight: bold;
     color: #2a9d8f;
   }
-  
+
   button {
     border-radius: 5px;
     display: inline-block;
     border: none;
-    padding: 1rem 2rem;
-    margin: 0;
+    padding:10px;
+    margin: 1;
     text-decoration: none;
     background: #e76f51;
     color: #ffffff;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 100%;
     cursor: pointer;
     text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
    
+  }
+
+  /*Level Styling*/
+
+  .GameBox{
+    width:75%;
+    height:75%;
+    border: dashed;
+    display: flex;
   }
 
 
