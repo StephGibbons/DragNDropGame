@@ -127,33 +127,36 @@ a{
     display: flex;
   }
 
-  .Title{
+  .title{
       font-size: 125%;
       font-weight: bold;
   }
 
-  .IngredientsList{
+  .ingredientsList{
       display: flex;
       flex-direction: column;
       width:30%;
       font-size:125%;
       border: dashed;
   }
-  .ShoppingCart{
-      width:20%;
+  .shoppingCart{
+      width: 200px;
+      height: 200px;
+      margin: 25px;
   }
 
-  .Shelves{
+  .shelves{
     width:50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    border: dashed;
   }
 
 
   .food{
-    height:152px;
-    width:152px;
+    height:125px;
+    width:125px;
   }
 
 
