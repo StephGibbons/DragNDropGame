@@ -1,6 +1,12 @@
 var score = 0;
 
-var min,sec,ms,count, malt, salt, msalt;
+var min;
+var sec
+var ms
+var count
+var malt
+var salt
+var msalt;
 
 var stopwatch = {
   start: function(){
