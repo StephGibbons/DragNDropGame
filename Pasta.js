@@ -25,6 +25,8 @@ const cucumber = document.getElementById('cucumber');
 const oil = document.getElementById('oil');
 const rotini = document.getElementById('rotini');
 
+const shoppingCart = document.getElementById('shoppingCart');
+
 
 var stopwatch = {
   start: function(){
@@ -87,6 +89,8 @@ orangeBlock.addEventListener('dragover', dragOver);
 orangeBlock.addEventListener('dragenter', dragEnter);
 orangeBlock.addEventListener('dragleave', dragLeaveOrange);
 orangeBlock.addEventListener('drop', dragDropOrange);
+
+
 
 
 //Drag Functions
