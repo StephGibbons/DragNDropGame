@@ -8,6 +8,24 @@ var malt
 var salt
 var msalt;
 
+const redPepper = document.getElementById('redPepper');
+const bacon = document.getElementById('bacon');
+const eggs = document.getElementById('eggs');
+const greenPepper = document.getElementById('greenPepper');
+const blackPepper = document.getElementById('blackPepper');
+const garlic = document.getElementById('garlic');
+const tomato = document.getElementById('tomato');
+const butter = document.getElementById('butter');
+const parm = document.getElementById('parm');
+const heavyCream = document.getElementById('heavyCream');
+const basil = document.getElementById('basil');
+const honey = document.getElementById('honey');
+const spaghetti = document.getElementById('spaghetti');
+const cucumber = document.getElementById('cucumber');
+const oil = document.getElementById('oil');
+const rotini = document.getElementById('rotini');
+
+
 var stopwatch = {
   start: function(){
     if(document.getElementById("start").firstChild.nodeValue != "Start"){
