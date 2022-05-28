@@ -1,11 +1,11 @@
 var score = 0;
 
 var min;
-var sec
-var ms
-var count
-var malt
-var salt
+var sec;
+var ms;
+var count;
+var malt;
+var salt;
 var msalt;
 
 const redPepper = document.getElementById('redPepper');
