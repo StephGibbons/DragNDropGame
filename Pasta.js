@@ -1,5 +1,3 @@
-var score = 0;
-
 const redPepper = document.getElementById('redPepper');
 const bacon = document.getElementById('bacon');
 const eggs = document.getElementById('eggs');
@@ -18,6 +16,8 @@ const oil = document.getElementById('oil');
 const rotini = document.getElementById('rotini');
 
 const shoppingCart = document.getElementById('shoppingCart');
+
+var score = 0;
 
 
 
@@ -84,7 +84,7 @@ function dragStart(e){
 }
 
 function dragEnd(){
-  this.className = 'shape';
+  this.className = 'food';
 } 
 
 function dragOver(e){
