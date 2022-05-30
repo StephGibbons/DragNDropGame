@@ -85,49 +85,49 @@ var stopwatch = {
 //old code
 
 //redPepper
-redPepper.addEventListener('draggarlict', draggarlict);
+redPepper.addEventListener('dragstart', dragStart);
 redPepper.addEventListener('dragend', dragEnd);
 //bacon
-bacon.addEventListener('draggarlict', draggarlict);
+bacon.addEventListener('dragstart', dragStart);
 bacon.addEventListener('dragend', dragEnd);
 //eggs
-eggs.addEventListener('draggarlict', draggarlict);
+eggs.addEventListener('dragStart', dragStart);
 eggs.addEventListener('dragend', dragEnd);
 //greenPepper
-greenPepper.addEventListener('draggarlict', draggarlict);
+greenPepper.addEventListener('dragstart', dragStart);
 greenPepper.addEventListener('dragend', dragEnd);
 //blackPepper
-blackPepper.addEventListener('draggarlict', draggarlict);
+blackPepper.addEventListener('dragstart', dragStart);
 blackPepper.addEventListener('dragend', dragEnd);
 //tomato
-tomato.addEventListener('draggarlict', draggarlict);
+tomato.addEventListener('dragstart', dragStart);
 tomato.addEventListener('dragend', dragEnd);
 //butter
-butter.addEventListener('draggarlict', draggarlict);
+butter.addEventListener('dragstart', dragStart);
 butter.addEventListener('dragend', dragEnd);
 //parm
-parm.addEventListener('draggarlict', draggarlict);
+parm.addEventListener('dragstart', dragStart);
 parm.addEventListener('dragend', dragEnd);
 //heavyCream
-heavyCream.addEventListener('draggarlict', draggarlict);
+heavyCream.addEventListener('dragstart', dragStart);
 heavyCream.addEventListener('dragend', dragEnd);
 //basil
-basil.addEventListener('draggarlict', draggarlict);
+basil.addEventListener('dragstart', dragStart);
 basil.addEventListener('dragend', dragEnd);
 //honey
-honey.addEventListener('draggarlict', draggarlict);
+honey.addEventListener('dragstart', dragStart);
 honey.addEventListener('dragend', dragEnd);
 //spaghetti
-spaghetti.addEventListener('draggarlict', draggarlict);
+spaghetti.addEventListener('dragstart', dragStart);
 spaghetti.addEventListener('dragend', dragEnd);
 //cucumber
-cucumber.addEventListener('draggarlict', draggarlict);
+cucumber.addEventListener('dragstart', dragStart);
 cucumber.addEventListener('dragend', dragEnd);
 //oil
-oil.addEventListener('draggarlict', draggarlict);
+oil.addEventListener('dragstart', dragStart);
 oil.addEventListener('dragend', dragEnd);
 //rotini
-rotini.addEventListener('draggarlict', draggarlict);
+rotini.addEventListener('dragstart', dragStart);
 rotini.addEventListener('dragend', dragEnd);
 
 //orange
@@ -140,11 +140,10 @@ shoppingCart.addEventListener('drop', dragDropOrange);
 
 
 //Drag Functions
-function draggarlict(e) {
+function dragStart(e){
     this.className += ' hold';
     setTimeout(() => (this.className = 'invisible'), 0);
     e.dataTransfer.setData("id", e.target.id);
-    //winningMessageElement.classList.remove('show');
 }
 
 function dragEnd() {
