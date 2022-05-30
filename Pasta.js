@@ -75,25 +75,26 @@ shoppingCart.addEventListener('drop', dragDrop);
 
 
 
-
 //Drag Functions
-function dragStart(){
+function dragStart(e){
   console.log("start");
+  this.className += ' hold';
+  setTimeout(()=>(this.className = 'invisible'),0);
+  e.dataTransfer.setData("id", e.target.id);
 }
 
-function dragEnd() {
-  console.log("end");
+function dragEnd(){
+  this.className = 'shape';
+} 
+
+function dragOver(e){
+  e.preventDefault();
+  this.classList.add('glow');
+
 }
 
-function dragOver(e) {
-    console.log("over");
-    e.preventDefault();
-    this.classList.add('grow');
-}
-
-function dragEnter(e) {
-    e.preventDefault();
-
+function dragEnter(e){
+  e.preventDefault();
 }
 
 //dropfunctions
