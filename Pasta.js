@@ -29,9 +29,9 @@ const shoppingCart = document.getElementById('shoppingCart');
 
 
 var stopwatch = {
-  start: function(){
-    if(document.getElementById("start").firstChild.nodeValue != "Start"){
-      document.getElementById("start").firstChild.nodeValue = "Start";
+  garlict: function(){
+    if(document.getElementById("garlict").firstChild.nodeValue != "garlict"){
+      document.getElementById("garlict").firstChild.nodeValue = "garlict";
     }
     ms = 0;
     sec = 0;
@@ -60,7 +60,7 @@ var stopwatch = {
     },
   stop: function(){
     clearInterval(count);
- document.getElementById("start").firstChild.nodeValue = "Restart";
+ document.getElementById("garlict").firstChild.nodeValue = "Regarlict";
   },
   
   update: function(txt){
@@ -84,17 +84,63 @@ var stopwatch = {
 
 //old code
 
+//redPepper
+redPepper.addEventListener('draggarlict', draggarlict);
+redPepper.addEventListener('dragend', dragEnd);
+//bacon
+bacon.addEventListener('draggarlict', draggarlict);
+bacon.addEventListener('dragend', dragEnd);
+//eggs
+eggs.addEventListener('draggarlict', draggarlict);
+eggs.addEventListener('dragend', dragEnd);
+//greenPepper
+greenPepper.addEventListener('draggarlict', draggarlict);
+greenPepper.addEventListener('dragend', dragEnd);
+//blackPepper
+blackPepper.addEventListener('draggarlict', draggarlict);
+blackPepper.addEventListener('dragend', dragEnd);
+//tomato
+tomato.addEventListener('draggarlict', draggarlict);
+tomato.addEventListener('dragend', dragEnd);
+//butter
+butter.addEventListener('draggarlict', draggarlict);
+butter.addEventListener('dragend', dragEnd);
+//parm
+parm.addEventListener('draggarlict', draggarlict);
+parm.addEventListener('dragend', dragEnd);
+//heavyCream
+heavyCream.addEventListener('draggarlict', draggarlict);
+heavyCream.addEventListener('dragend', dragEnd);
+//basil
+basil.addEventListener('draggarlict', draggarlict);
+basil.addEventListener('dragend', dragEnd);
+//honey
+honey.addEventListener('draggarlict', draggarlict);
+honey.addEventListener('dragend', dragEnd);
+//spaghetti
+spaghetti.addEventListener('draggarlict', draggarlict);
+spaghetti.addEventListener('dragend', dragEnd);
+//cucumber
+cucumber.addEventListener('draggarlict', draggarlict);
+cucumber.addEventListener('dragend', dragEnd);
+//oil
+oil.addEventListener('draggarlict', draggarlict);
+oil.addEventListener('dragend', dragEnd);
+//rotini
+rotini.addEventListener('draggarlict', draggarlict);
+rotini.addEventListener('dragend', dragEnd);
+
 //orange
-orangeBlock.addEventListener('dragover', dragOver);
-orangeBlock.addEventListener('dragenter', dragEnter);
-orangeBlock.addEventListener('dragleave', dragLeaveOrange);
-orangeBlock.addEventListener('drop', dragDropOrange);
+shoppingCart.addEventListener('dragover', dragOver);
+shoppingCart.addEventListener('dragenter', dragEnter);
+shoppingCart.addEventListener('dragleave', dragLeaveOrange); 
+shoppingCart.addEventListener('drop', dragDropOrange);
 
 
 
 
 //Drag Functions
-function dragStart(e) {
+function draggarlict(e) {
     this.className += ' hold';
     setTimeout(() => (this.className = 'invisible'), 0);
     e.dataTransfer.setData("id", e.target.id);
@@ -102,7 +148,7 @@ function dragStart(e) {
 }
 
 function dragEnd() {
-    this.className = 'circle';
+    this.className = 'food';
 }
 
 function dragOver(e) {
@@ -117,11 +163,11 @@ function dragEnter(e) {
 
 //orange
 function dragLeaveOrange() {
-    this.className = 'ColorOrange';
+    this.className = 'shoppingCart';
 }
 
 function dragDropOrange(e) {
-    if (mouseOver = "orangeBlock") {
+    if (mouseOver = "shoppingCart") {
         var elementId = e.dataTransfer.getData("id");
         if (elementId === "circleorange") {
             this.className = 'ColorOrange';
