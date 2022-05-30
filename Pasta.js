@@ -77,17 +77,16 @@ shoppingCart.addEventListener('drop', dragDrop);
 
 
 //Drag Functions
-function dragStart(e){
-    this.className += ' hold';
-    setTimeout(() => (this.className = 'invisible'), 0);
-    e.dataTransfer.setData("id", e.target.id);
+function dragStart(){
+  console.log("start");
 }
 
 function dragEnd() {
-    
+  console.log("end");
 }
 
 function dragOver(e) {
+    console.log("over");
     e.preventDefault();
     this.classList.add('grow');
 }
@@ -102,21 +101,20 @@ function dragLeave() {
     this.className = 'shoppingCart';
 }
 
-function dragDrop(e) {
-    if (mouseOver = "shoppingCart") {
-        var elementId = e.dataTransfer.getData("id");
-        if (elementId === "") {
-            this.className = 'ColorOrange';
-            this.append(circleorange);
-            score++;
-            console.log(score);
-
-            if (score === 6) {
-                alert("You won the game, congratulations!");
-                console.log(score);
-            }
-
-        }
-    }
+function dragDrop(e){
+  if(mouseOver = "shoppingCart"){
+      var elementId = e.dataTransfer.getData("id");
+      if(elementId === "pentagon"){
+  this.elementId = 'shoppingCart';
+  this.append(pentagon);
+  this.classList.remove('glow') 
+ 
+  score++; 
+  
+  if (score===6){
+      alert("You won the game, congratulations!");
+      console.log(score);
+  }
+      }
+  }
 }
-
