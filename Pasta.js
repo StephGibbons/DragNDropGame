@@ -66,6 +66,10 @@ oil.addEventListener('dragend', dragEnd);
 //rotini
 rotini.addEventListener('dragstart', dragStart);
 rotini.addEventListener('dragend', dragEnd);
+//garlic
+garlic.addEventListener('dragstart', dragStart);
+garlic.addEventListener('dragend', dragEnd);
+
 
 //shoppingcart
 shoppingCart.addEventListener('dragover', dragOver);
@@ -105,17 +109,155 @@ function dragLeave() {
 function dragDrop(e){
   if(mouseOver = "shoppingCart"){
       var elementId = e.dataTransfer.getData("id");
-      if(elementId === "pentagon"){
-  this.elementId = 'shoppingCart';
-  this.append(pentagon);
-  this.classList.remove('glow') 
- 
-  score++; 
   
-  if (score===6){
-      alert("You won the game, congratulations!");
-      console.log(score);
-  }
+      if(elementId === "blackPepper"){
+        this.elementId = 'shoppingCart';
+        this.append(blackPepper);
+        this.classList.remove('glow') 
+        score++; 
+        
+            if (score===8){
+            alert("some message");
+            console.log(score);
+            }
+        }
+        if(elementId === "garlic"){
+          this.elementId = 'shoppingCart';
+          this.append(garlic);
+          this.classList.remove('glow') 
+          score++; 
+          
+              if (score===8){
+              alert("some message");
+              console.log(score);
+              }
+          }
+
+          if(elementId === "parm"){
+            this.elementId = 'shoppingCart';
+            this.append(parm);
+            this.classList.remove('glow') 
+            score++; 
+                  
+                  if (score===8){
+                      alert("some message");
+                      console.log(score);
+                  }
+            }
+
+            if(elementId === "spaghetti"){
+              this.elementId = 'shoppingCart';
+              this.append(spaghetti);
+              this.classList.remove('glow') 
+              score++; 
+                    
+                    if (score===8){
+                        alert("some message");
+                        console.log(score);
+                    }
+              }
+
+              if(elementId === "oil"){
+                this.elementId = 'shoppingCart';
+                this.append(oil);
+                this.classList.remove('glow') 
+                score++; 
+                      
+                      if (score===8){
+                          alert("some message");
+                          console.log(score);
+                      }
+                }
+
+                if(elementId === "parsley"){
+                  this.elementId = 'shoppingCart';
+                  this.append(parsley);
+                  this.classList.remove('glow') 
+                  score++; 
+                        
+                        if (score===8){
+                            alert("some message");
+                            console.log(score);
+                        }
+                  }
+
+                  if(elementId === "eggs"){
+                    this.elementId = 'shoppingCart';
+                    this.append(eggs);
+                    this.classList.remove('glow') 
+                    score++; 
+                          
+                          if (score===8){
+                              alert("some message");
+                              console.log(score);
+                          }
+                    }
+
+                    if(elementId === "bacon"){
+                      this.elementId = 'shoppingCart';
+                      this.append(bacon);
+                      this.classList.remove('glow') 
+                      score++; 
+                            
+                            if (score===8){
+                                alert("some message");
+                                console.log(score);
+                            }
+                      }
+        }
       }
-  }
-}
+
+      //Timer code
+      var min,sec,ms,count, malt, salt, msalt;
+
+      var stopwatch = {
+        start: function(){
+          if(document.getElementById("start").firstChild.nodeValue != "Start"){
+            document.getElementById("start").firstChild.nodeValue = "Start";
+          }
+          ms = 0;
+          sec = 0;
+          min = 0;
+          count = setInterval(function(){
+            if(ms == 100){
+              ms = 0;
+              if(sec == 60){
+                sec = 0;
+                min++;
+              }
+              else{
+                sec++;
+              }
+            }
+            else{
+              ms++;
+            }
+            
+            malt = stopwatch.pad(min);
+            salt = stopwatch.pad(sec);
+            msalt = stopwatch.pad(ms);
+            
+            stopwatch.update(malt + ":" + salt + ":" + msalt);
+          }, 10);
+          },
+        stop: function(){
+          clearInterval(count);
+       document.getElementById("start").firstChild.nodeValue = "Restart";
+        },
+        
+        update: function(txt){
+           var temp = document.getElementById("timer");
+        temp.firstChild.nodeValue = txt;
+        },
+        
+        pad: function(time){
+          var temp;
+          if(time < 10){
+            temp = "0" + time;
+          }
+          else{
+            temp = time;
+          }
+          return temp;
+        }
+      }
