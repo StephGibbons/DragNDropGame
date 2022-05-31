@@ -81,7 +81,7 @@ a{
 }
 
   /*Level Styling*/
-
+  /*background-image: url(Images/Wallpaper.jpeg);*/
   .GameBox{
     display: flex;
     flex-direction: row;
@@ -104,6 +104,8 @@ a{
       font-size:125%;
       border: dashed;
       padding:10px;
+      padding-left: 20px;
+
   }
   .shoppingCart{
       width: 200px;
