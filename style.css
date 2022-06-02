@@ -142,8 +142,9 @@ display: flex;
   }
   
   #controls{
-    width:200px;
+    width:auto;
     display:block;
+    padding-right: 10px;
   }
   
   .timer-btn{
