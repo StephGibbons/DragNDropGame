@@ -1,4 +1,4 @@
-const redPepper = document.getElementById('redPepper');
+const redPepper = document.getElementById('redpepper');
 const bacon = document.getElementById('bacon');
 const eggs = document.getElementById('eggs');
 const greenPepper = document.getElementById('greenPepper');
