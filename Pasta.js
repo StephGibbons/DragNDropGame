@@ -118,6 +118,7 @@ function dragDrop(e){
         
             if (score===8){
             alert("some message");
+            stopwatch.stop();
             console.log(score);
             }
         }
@@ -129,6 +130,7 @@ function dragDrop(e){
           
               if (score===8){
               alert("some message");
+              stopwatch.stop();
               console.log(score);
               }
           }
@@ -141,6 +143,7 @@ function dragDrop(e){
                   
                   if (score===8){
                       alert("some message");
+                      stopwatch.stop();
                       console.log(score);
                   }
             }
@@ -153,6 +156,7 @@ function dragDrop(e){
                     
                     if (score===8){
                         alert("some message");
+                        stopwatch.stop();
                         console.log(score);
                     }
               }
@@ -165,6 +169,7 @@ function dragDrop(e){
                       
                       if (score===8){
                           alert("some message");
+                          stopwatch.stop();
                           console.log(score);
                       }
                 }
@@ -177,6 +182,7 @@ function dragDrop(e){
                         
                         if (score===8){
                             alert("some message");
+                            stopwatch.stop();
                             console.log(score);
                         }
                   }
@@ -189,6 +195,7 @@ function dragDrop(e){
                           
                           if (score===8){
                               alert("some message");
+                              stopwatch.stop();
                               console.log(score);
                           }
                     }
