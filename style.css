@@ -47,15 +47,7 @@ p{
     flex-direction: row;
     border-radius: 45px;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.75);
     margin-bottom: 15px;
-}
-
-button{
-    font-size:200%;
-    border-radius: 5px;
-    font-weight: bold;
-
 }
 
 a{
@@ -64,12 +56,18 @@ a{
 }
 
 .selected{
+    font-size:200%;
+    border-radius: 5px;
+    font-weight: bold;
     background-color: #abcab3;
     color: #255627;
     width: 25%;
     font-weight: bold;
 }
 .unselected{
+    font-size:200%;
+    border-radius: 5px;
+    font-weight: bold;
     width: 25%;
     background-color: #7bba6c;
     
@@ -125,8 +123,7 @@ a{
     padding-bottom: 15px;
     border: solid;
     border-radius: 20px;
-    background-color: #352f2f;
-
+    background-color: rgba(112, 92, 92, 0.5);
   }
 
 
@@ -139,7 +136,6 @@ a{
   /*timer styling*/
 .timer{
 display: flex;
-
 }
   #timer{
     width:200px;
@@ -163,15 +159,53 @@ display: flex;
     cursor:pointer;
     display:inline-block;
     margin-bottom: 10px;
+    
   }
   
   #start{
-    background-color:green;
+    background-color:rgb(71, 129, 71);
   }
   
   #stop{
     background-color:red;
   }
+
+  /* Main Page Styling*/
+.bottomButtons{
+  margin-top: 15px;
+  width:40%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 45px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+a{
+  text-decoration: none;
+  color:rgb(255, 255, 255);
+}
+
+.selectedBottom{
+  font-size: 125%;
+  font-weight: bold;
+  background-color: #6a5c47;
+  color: #f6f9f6;
+  width: 25%;
+}
+.unselectedBottom{
+  font-size: 125%;
+  width: 25%;
+  background-color: rgb(71, 129, 71);
+  
+  
+}
+.unselectedBottom:hover{
+  background-color: #fcb40c;
+  font-weight: bold;
+}
+
+
 
 
 
