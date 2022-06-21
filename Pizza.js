@@ -116,7 +116,7 @@ function dragDrop(e){
         this.classList.remove('glow') 
         score++; 
         
-            if (score===7){
+            if (score===6){
             alert("some message");
             stopwatch.stop();
             console.log(score);
@@ -128,7 +128,7 @@ function dragDrop(e){
           this.classList.remove('glow') 
           score++; 
           
-              if (score===7){
+              if (score===6){
               alert("some message");
               stopwatch.stop();
               console.log(score);
@@ -141,25 +141,13 @@ function dragDrop(e){
             this.classList.remove('glow') 
             score++; 
                   
-                  if (score===7){
+                  if (score===6){
                       alert("some message");
                       stopwatch.stop();
                       console.log(score);
                   }
             }
 
-            if(elementId === "spaghetti"){
-              this.elementId = 'shoppingCart';
-              this.append(spaghetti);
-              this.classList.remove('glow') 
-              score++; 
-                    
-                    if (score===7){
-                        alert("some message");
-                        stopwatch.stop();
-                        console.log(score);
-                    }
-              }
 
               if(elementId === "prosciutto"){
                 this.elementId = 'shoppingCart';
@@ -167,7 +155,7 @@ function dragDrop(e){
                 this.classList.remove('glow') 
                 score++; 
                       
-                      if (score===7){
+                      if (score===6){
                           alert("some message");
                           stopwatch.stop();
                           console.log(score);
@@ -180,7 +168,7 @@ function dragDrop(e){
                   this.classList.remove('basil') 
                   score++; 
                         
-                        if (score===7){
+                        if (score===6){
                             alert("some message");
                             stopwatch.stop();
                             console.log(score);
@@ -193,7 +181,7 @@ function dragDrop(e){
                     this.classList.remove('glow') 
                     score++; 
                           
-                          if (score===7){
+                          if (score===6){
                               alert("some message");
                               stopwatch.stop();
                               console.log(score);
