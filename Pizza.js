@@ -1,18 +1,18 @@
-const redPepper = document.getElementById('redPepper');
-const bacon = document.getElementById('bacon');
+const mushroom = document.getElementById('mushroom');
+const flour = document.getElementById('flour');
 const eggs = document.getElementById('eggs');
 const greenPepper = document.getElementById('greenPepper');
-const blackPepper = document.getElementById('blackPepper');
+const prosciutto = document.getElementById('prosciutto');
 const garlic = document.getElementById('garlic');
-const tomato = document.getElementById('tomato');
+const dough = document.getElementById('dough');
 const butter = document.getElementById('butter');
-const parm = document.getElementById('parm');
+const mozza = document.getElementById('mozza');
 const heavyCream = document.getElementById('heavyCream');
-const parsley = document.getElementById('parsley');
+const basil = document.getElementById('basil');
 const honey = document.getElementById('honey');
 const spaghetti = document.getElementById('spaghetti');
 const cucumber = document.getElementById('cucumber');
-const oil = document.getElementById('oil');
+const pizzaSauce = document.getElementById('pizzaSauce');
 const rotini = document.getElementById('rotini');
 
 const shoppingCart = document.getElementById('shoppingCart');
@@ -21,36 +21,36 @@ var score = 0;
 
 
 
-//redPepper
-redPepper.addEventListener('dragstart', dragStart);
-redPepper.addEventListener('dragend', dragEnd);
-//bacon
-bacon.addEventListener('dragstart', dragStart);
-bacon.addEventListener('dragend', dragEnd);
+//mushroom
+mushroom.addEventListener('dragstart', dragStart);
+mushroom.addEventListener('dragend', dragEnd);
+//flour
+flour.addEventListener('dragstart', dragStart);
+flour.addEventListener('dragend', dragEnd);
 //eggs
 eggs.addEventListener('dragstart', dragStart);
 eggs.addEventListener('dragend', dragEnd);
 //greenPepper
 greenPepper.addEventListener('dragstart', dragStart);
 greenPepper.addEventListener('dragend', dragEnd);
-//blackPepper
-blackPepper.addEventListener('dragstart', dragStart);
-blackPepper.addEventListener('dragend', dragEnd);
-//tomato
-tomato.addEventListener('dragstart', dragStart);
-tomato.addEventListener('dragend', dragEnd);
+//prosciutto
+prosciutto.addEventListener('dragstart', dragStart);
+prosciutto.addEventListener('dragend', dragEnd);
+//dough
+dough.addEventListener('dragstart', dragStart);
+dough.addEventListener('dragend', dragEnd);
 //butter
 butter.addEventListener('dragstart', dragStart);
 butter.addEventListener('dragend', dragEnd);
-//parm
-parm.addEventListener('dragstart', dragStart);
-parm.addEventListener('dragend', dragEnd);
+//mozza
+mozza.addEventListener('dragstart', dragStart);
+mozza.addEventListener('dragend', dragEnd);
 //heavyCream
 heavyCream.addEventListener('dragstart', dragStart);
 heavyCream.addEventListener('dragend', dragEnd);
-//parsley
-parsley.addEventListener('dragstart', dragStart);
-parsley.addEventListener('dragend', dragEnd);
+//basil
+basil.addEventListener('dragstart', dragStart);
+basil.addEventListener('dragend', dragEnd);
 //honey
 honey.addEventListener('dragstart', dragStart);
 honey.addEventListener('dragend', dragEnd);
@@ -60,9 +60,9 @@ spaghetti.addEventListener('dragend', dragEnd);
 //cucumber
 cucumber.addEventListener('dragstart', dragStart);
 cucumber.addEventListener('dragend', dragEnd);
-//oil
-oil.addEventListener('dragstart', dragStart);
-oil.addEventListener('dragend', dragEnd);
+//pizzaSauce
+pizzaSauce.addEventListener('dragstart', dragStart);
+pizzaSauce.addEventListener('dragend', dragEnd);
 //rotini
 rotini.addEventListener('dragstart', dragStart);
 rotini.addEventListener('dragend', dragEnd);
@@ -176,7 +176,7 @@ function dragDrop(e){
 
                 if(elementId === "basil"){
                   this.elementId = 'shoppingCart';
-                  this.append(parsley);
+                  this.append(basil);
                   this.classList.remove('basil') 
                   score++; 
                         
