@@ -117,7 +117,7 @@ function dragDrop(e){
         score++; 
         
             if (score===6){
-            alert("some message");
+            alert("You win! Congratulations!");
             stopwatch.stop();
             console.log(score);
             }
@@ -129,7 +129,7 @@ function dragDrop(e){
           score++; 
           
               if (score===6){
-              alert("some message");
+              alert("You win! Congratulations!");
               stopwatch.stop();
               console.log(score);
               }
@@ -142,7 +142,7 @@ function dragDrop(e){
             score++; 
                   
                   if (score===6){
-                      alert("some message");
+                      alert("You win! Congratulations!");
                       stopwatch.stop();
                       console.log(score);
                   }
@@ -156,7 +156,7 @@ function dragDrop(e){
                 score++; 
                       
                       if (score===6){
-                          alert("some message");
+                          alert("You win! Congratulations!");
                           stopwatch.stop();
                           console.log(score);
                       }
@@ -169,7 +169,7 @@ function dragDrop(e){
                   score++; 
                         
                         if (score===6){
-                            alert("some message");
+                            alert("You win! Congratulations!");
                             stopwatch.stop();
                             console.log(score);
                         }
@@ -182,7 +182,7 @@ function dragDrop(e){
                     score++; 
                           
                           if (score===6){
-                              alert("some message");
+                              alert("You win! Congratulations!");
                               stopwatch.stop();
                               console.log(score);
                           }
