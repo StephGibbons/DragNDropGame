@@ -268,6 +268,7 @@ function dragDrop(e){
         stop: function(){
           clearInterval(count);
        document.getElementById("start").firstChild.nodeValue = "Restart";
+       
         },
         
         update: function(txt){
