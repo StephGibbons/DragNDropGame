@@ -86,7 +86,7 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width:80%;
+    width:90%;
     height:75%;
     display: flex;
   }
@@ -116,7 +116,7 @@ a{
   }
 
   .shelves{
-    width:50%;
+    width:45%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
