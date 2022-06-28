@@ -212,6 +212,10 @@ function dragDrop(e){
                                 console.log(score);
                             }
                       }
+
+                      else{
+                        this.classList.remove('glow');
+                      }
         }
       }
 
