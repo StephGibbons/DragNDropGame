@@ -101,7 +101,7 @@ a{
      background-image: url(images/phone.png);
       display: flex;
       flex-direction: column;
-      width:215px;
+      width:200px;
       height: 325px;
       font-size:110%;
       padding:10px;
