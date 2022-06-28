@@ -104,7 +104,6 @@ function dragEnter(e){
 //dropfunctions
 function dragLeave() {
     this.className = 'shoppingCart';
-    this.classList.remove('glow');
 }
 
 function dragDrop(e){
