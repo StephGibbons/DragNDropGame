@@ -1,5 +1,5 @@
 const redPepper = document.getElementById('redPepper');
-const bacon = document.getElementById('bacon');
+const shallots = document.getElementById('shallots');
 const eggs = document.getElementById('eggs');
 const wsauce = document.getElementById('wsauce');
 const blackPepper = document.getElementById('blackPepper');
@@ -24,9 +24,9 @@ var score = 0;
 //redPepper
 redPepper.addEventListener('dragstart', dragStart);
 redPepper.addEventListener('dragend', dragEnd);
-//bacon
-bacon.addEventListener('dragstart', dragStart);
-bacon.addEventListener('dragend', dragEnd);
+//shallots
+shallots.addEventListener('dragstart', dragStart);
+shallots.addEventListener('dragend', dragEnd);
 //eggs
 eggs.addEventListener('dragstart', dragStart);
 eggs.addEventListener('dragend', dragEnd);
@@ -110,13 +110,13 @@ function dragDrop(e){
   if(mouseOver = "shoppingCart"){
       var elementId = e.dataTransfer.getData("id");
   
-      if(elementId === "blackPepper"){
+      if(elementId === "buns"){
         this.elementId = 'shoppingCart';
-        this.append(blackPepper);
+        this.append(buns);
         this.classList.remove('glow') 
         score++; 
         
-            if (score===8){
+            if (score===9){
             alert("You win! Congratulations!");
             stopwatch.stop();
             console.log(score);
@@ -128,20 +128,20 @@ function dragDrop(e){
           this.classList.remove('glow') 
           score++; 
           
-              if (score===8){
+              if (score===9){
               alert("You win! Congratulations!");
               stopwatch.stop();
               console.log(score);
               }
           }
 
-          if(elementId === "tomato"){
+          if(elementId === "blackPepper"){
             this.elementId = 'shoppingCart';
-            this.append(tomato);
+            this.append(blackPepper);
             this.classList.remove('glow') 
             score++; 
                   
-                  if (score===8){
+                  if (score===9){
                       alert("You win! Congratulations!");
                       stopwatch.stop();
                       console.log(score);
@@ -154,7 +154,7 @@ function dragDrop(e){
               this.classList.remove('glow') 
               score++; 
                     
-                    if (score===8){
+                    if (score===9){
                         alert("You win! Congratulations!");
                         stopwatch.stop();
                         console.log(score);
@@ -167,7 +167,7 @@ function dragDrop(e){
                 this.classList.remove('glow') 
                 score++; 
                       
-                      if (score===8){
+                      if (score===9){
                           alert("You win! Congratulations!");
                           stopwatch.stop();
                           console.log(score);
@@ -180,38 +180,51 @@ function dragDrop(e){
                   this.classList.remove('glow') 
                   score++; 
                         
-                        if (score===8){
+                        if (score===9){
                             alert("You win! Congratulations!");
                             stopwatch.stop();
                             console.log(score);
                         }
                   }
 
-                  if(elementId === "eggs"){
+                  if(elementId === "shallots"){
                     this.elementId = 'shoppingCart';
-                    this.append(eggs);
+                    this.append(shallots);
                     this.classList.remove('glow') 
                     score++; 
                           
-                          if (score===8){
+                          if (score===9){
                               alert("You win! Congratulations!");
                               stopwatch.stop();
                               console.log(score);
                           }
                     }
 
-                    if(elementId === "bacon"){
+                    if(elementId === "wsauce"){
                       this.elementId = 'shoppingCart';
-                      this.append(bacon);
+                      this.append(wsauce);
                       this.classList.remove('glow') 
                       score++; 
                             
-                            if (score===8){
+                            if (score===9){
                                 alert("You win! Congratulations!");
                                 stopwatch.stop();
                                 console.log(score);
                             }
                       }
+
+                      if(elementId === "turkey"){
+                        this.elementId = 'shoppingCart';
+                        this.append(turkey);
+                        this.classList.remove('glow') 
+                        score++; 
+                              
+                              if (score===9){
+                                  alert("You win! Congratulations!");
+                                  stopwatch.stop();
+                                  console.log(score);
+                              }
+                        }
         }
       }
 
